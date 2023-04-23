@@ -1,0 +1,101 @@
+
+   
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 1920px;
+    height: 1080px;
+
+    
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color:white;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .list ul {
+  list-style-type: none;
+   margin: 0px;
+   padding: 0px;
+  }
+  .left-list  li{
+    display: inline-block;
+    margin: 120px;
+    padding: -20px ;
+    color:  rgba(0, 0, 0, 0.993);
+   
+  }
+  
+
+  .right-list  li{
+
+    display: inline-block;
+    margin: 20px;
+    padding: 15px;
+    color: black;
+  }
+
+
+  .button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .section{
+    width: 100%;
+    min-height: 100vh;
+
+  }
+  .container{
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+  }
+  .content-section{
+    float: left;
+    width: 55%;
+    left: 25px;
+  }
+  .image-section{
+    float: right;
+    width: 20%;
+   
+  }
+  .image-section img{
+    width: 20%;
+    height: auto;
+  
+  }
+
+  .content-section title{
+    text-transform: uppercase;
+    font-size: 45px;
+  }
+   
+  .content-section .content p{
+    margin-top: 35px;
+  }
+
+  .content-section .content.button2{
+    padding: 12px;
+    text-decoration: none;
+    font-size: 25px;
+    margin-bottom: 35px;
+
+  }
