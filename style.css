@@ -1,41 +1,131 @@
 
-   
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.form-container {
+.body {
+  color: #333;
+  background: #fcfcfc;
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+}
+.container{
+display: flex;
+flex-direction: row;
+margin-top:100px;
+margin-left: 250px;
+
+
+}
+
+.contact{
+  min-width: 100vh;
+  width: 80%;
+  margin: 0 auto;
   display: flex;
-  justify-content:center;
-  margin: 100px;
+  flex-direction: column;
+ 
+}
+.title{
+ font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 125%;
+display: flex;
+align-items: flex-end;
+color: #000000
+}
+
+
+
+
+
+.button {
+width: 480px;
+height: 56px;
+background: #F7F8F9;
+border: 1px solid #E8ECF4;
+border-radius: 8px;
+margin-top: 30px;
+
   
 }
 
-input {
- display: inline-block;
- 
- box-sizing: border-box;
- width: 218px;
- height: 29px;
- background: #FFFFFF;
- border: 0.8px solid #000000;
- border-radius: 10px;
- margin: 30px;
- 
- 
+.panel-title {
+width: 333px;
+height: 19px;
+padding: 10px 10px 0 48px;
+display: block;
+cursor: pointer;
+font-family: 'Noto Sans Georgian';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 125%;
+display: flex;
+align-items: flex-end;
+color: #000000;
 }
-input [type="text"]
-{
- width: 116px;
- height: 15px;
+
+.panel-content {
+  font-size: 20px;
+  padding: 0px 14px;
+  margin: 0 40px;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.panel:checked ~ .panel-content{
+  height: auto;
+  opacity: 1;
+  padding: 14px;
+}
+
+.panel {
+  display: none;
+}
+
+h3{
+  width: 171px;
+height: 11px;
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 24px;
+display: flex;
+align-items: center;
+
+color: #000000;
+margin-left: 150px;
+}
+
+.address1{
  font-style: normal;
- font-weight: 400;
- font-size: 14px;
- line-height: 22px;
- display: flex;
- align-items: center;
- color: #000000;
-  
+font-weight: 700;
+font-size: 15px;
+line-height: 17px;
+margin-left: 150px;
+align-items: center;
+color: #000000;
+padding: 35px;
+gap: 15px;
+list-style: none;
+display: grid;
+gap: 25px;
+
+
+
+
+}
+li{
+  gap: 15px;
 }
